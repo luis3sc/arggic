@@ -8,79 +8,87 @@
 </head>
 <body>
     <header class="hmin flex-c sinover rel">
-        <img class="w100 zindex0" src="./img/fondo-mbl.png" alt="">
-        <div class="w100 abs flex-spacebetween flex-colum h100 ">
+        <img class="w100 zindex0 block-resp" src="./img/fondo-mbl.png" alt="">
+        <img class="w100 zindex0 d-none-resp" src="./img/fondo-desktop.jpg" alt="">
+        <div class="w100 abs flex-spacebetween flex-a flex-colum h100 ">
             <div class="flex-colum flex-a padding1">
                 <div class="flex-colum-row-resp flex-a zindex1 clr-b">
                     <h1 class="ftsoul clr-2 ft-titulo">ARGGIC EN RUTA</h1>
                     <h3 class="ftsoul ft-lugar">LIMA-CANTA</h3>
                 </div>
-                <img class="w100" src="./img/argic.png" alt="">
+                <img class="w100 mw-380" src="./img/argic.png" alt="">
             </div>
-            <div class="w100 bg-n padding05">
-                <h2>TITULo</h2>
+            <div class="w100 flex-row  bg-n padding1 mw-420">
+                <h2 class="clr-b ftsoul ft-lugar">SABADO 22 OCT</h2>
+                <a href="#" class="bg-2 padding1 border20 clr-n ftsoul w20em flex-centro">Mas info</a>
             </div>
         </div>
     </header>
-    <main class="bg-g2 padsup-1 h-auto">
-        <h1 class="mgauto wifc">Cards Productos Catalogo con MAX-WIDTH</h1>
+    <main class="padsup-1 h-auto bg-3 clr-b sinover">
         <!-- Columna 5 - 2 Columna -->
+        <section class="contenedor-lg mgauto ">
+            <p class="ftsoul ft-titulo txt-centro ">CONCEPTO</p>
+            <div class="grid2c gap1 mgtp">
+                <div class="card-vert padding1 border20">
+                    <p class="text-p">
+                        Prepárate para otra experiencia
+                        única en uno de los lugares
+                        mágicos de la sierra limeña,
+                        Canta, en donde disfrutarás de
+                        una fiesta en campamento bajo
+                        las estrellas, junto al calor de la
+                        fogata y un lineup espectacular
+                        de DJs nacionales.
+                    </p>
+                </div>
+                <div class="card-vert border20">
+                    <img class="w100" src="./img/camping.png" alt="">
+                </div>
+            </div>
+        </section>
         <section class="padhor-1 contenedor-lg mgauto">
-            <p>5 Columnas</p>
-            <div class="bg-g1 grid-5-2 gap1 padsup-1">
-                <div class="card-vert bg-b padding1 border20">
-                    <a href="#" class="flex-centro">
-                        <img class="w100" src="https://tortaza.com.pe/Assets/tienda/images/vitrina/sensacionmaracuya.webp" alt="">
-                    </a>
-                    <div class="flex-colum">
-                        <p class="f-bold txtlimit sinover">Sensacion de Maracuya</p>
-                        <p>desde <b>S/ 50.00</b> </p>
-                        <a href="" class="bg-n clr-b flex-centro w100 padding05 border05">Añadir al carrito</a>
+            <p class="ftsoul ft-titulo">TICKET</p>
+            <div class="grid2c gap1 mgtp">
+                <div class="flex-colum bg-b clr-n rel ">
+                    <div class="ico-w bordercircular leftop2 abs bg-3"></div>
+                    <div class="ico-w bordercircular rigtop2 abs bg-3"></div>
+                    <div class=" flex-spacebetween paddingprinc brdrbtd-1 brdclr-n">
+                        <p class="text-p ftsoul">
+                            GENERAL
+                        </p>
+                        <p class="text-p ftsoul">S/ 35.00</p>
+                    </div>
+                    <div class="padding1">
+                        <a href="#" class="bg-2 padding1 border20 clr-n ftsoul w20em flex-centro">Comprar</a>
                     </div>
                 </div>
-                <div class="card-vert bg-b padding1 border20">
-                    <a href="#" class="flex-centro">
-                        <img class="w100" src="https://tortaza.com.pe/Assets/tienda/images/vitrina/sensacionmaracuya.webp" alt="">
-                    </a>
-                    <div class="flex-colum">
-                        <p class="f-bold txtlimit sinover">Sensacion de Maracuya</p>
-                        <b>S/ 50.00</b> 
-                        <a href="" class="brdclr-n border2px clr-n flex-centro w100 padding05 border05">Añadir al carrito</a>
+                <div class="flex-colum bg-b clr-n rel">
+                    <div class="ico-w bordercircular leftop2 abs bg-3"></div>
+                    <div class="ico-w bordercircular rigtop2 abs bg-3"></div>
+                    <div class=" flex-spacebetween paddingprinc brdrbtd-1 brdclr-n">
+                        <p class="text-p ftsoul">VIP</p>
+                        <p class="text-p ftsoul">S/ 90.00</p>
                     </div>
-                </div>
-                <div class="card-vert bg-b padding1 border20">
-                    <a href="#" class="flex-centro">
-                        <img class="w100" src="https://tortaza.com.pe/Assets/tienda/images/vitrina/sensacionmaracuya.webp" alt="">
-                    </a>
-                    <div class="flex-colum">
-                        <p class="f-bold txtlimit sinover">Sensacion de Maracuya</p>
-                        <b>S/ 50.00</b> 
-                        <a href="" class="bg-n clr-b flex-centro w100 padding05 border05">Añadir al carrito</a>
+                    <div class="paddingprinc flex-colum gap1">
+                        <div class="flex gap-5 flex-a">
+                            <div class="ico-check bordercircular bg-2"></div>
+                            <p class="ft-car f-bold">Transporte Ida y Vuelva: Lima / Canta</p>
+                        </div>
+                        <div class="flex gap-5 flex-a">
+                            <div class="ico-check bordercircular bg-2"></div>
+                            <p class="ft-car f-bold">Camping VIP</p>
+                        </div>
+                        <div class="flex gap-5 flex-a">
+                            <div class="ico-check bordercircular bg-2"></div>
+                            <p class="ft-car f-bold">Ammeneties</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card-vert bg-b padding1 border20">
-                    <a href="#" class="flex-centro">
-                        <img class="w100" src="https://tortaza.com.pe/Assets/tienda/images/vitrina/sensacionmaracuya.webp" alt="">
-                    </a>
-                    <div class="flex-colum">
-                        <p class="f-bold txtlimit sinover">Sensacion de Maracuya</p>
-                        <b>S/ 50.00</b>
-                        <a href="" class="bg-n clr-b flex-centro w100 padding05 border05">Añadir al carrito</a>
-                    </div>
-                </div>
-                <div class="card-vert bg-b padding1 border20">
-                    <a href="#" class="flex-centro">
-                        <img class="w100" src="https://tortaza.com.pe/Assets/tienda/images/vitrina/sensacionmaracuya.webp" alt="">
-                    </a>
-                    <div class="flex-colum">
-                        <p class="f-bold txtlimit sinover">Sensacion de Maracuya</p>
-                        <b>S/ 50.00</b>
-                        <a href="" class="bg-n clr-b flex-centro w100 padding05 border05">Añadir al carrito</a>
+                    <div class="padding1">
+                        <a href="#" class="bg-2 padding1 border20 clr-n ftsoul w20em flex-centro">Comprar</a>
                     </div>
                 </div>
             </div>
         </section>
-        
     </main>
     <footer class="d-none-resp bg-g3">
         Footers

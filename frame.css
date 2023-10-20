@@ -2,7 +2,7 @@
     /*Paleta de colores*/
     --primario: #d90429;
     --secundario: #23ef2d;
-    --terciario: #edf2f4;
+    --terciario: #211f22;
     --cuaternario: #8d99ae;
     --quintenario: #2b2d42;
     /*Colores general*/
@@ -73,8 +73,25 @@
 .ft-titulo{
   font-size: 3.5em;
 }
+.text-p{
+  font-size: 1.7em;
+}
 .ft-lugar{
   font-size: 1.5em;
+}
+.w20em{
+  width: 20em;
+}
+.leftop2{
+  left: -2em;
+  top: 4em;
+}
+.rigtop2{
+  right: -2em;
+  top: 4em;
+}
+.ft-car{
+  font-size: 1.3em;
 }
 /**/
 button, input, a{
@@ -104,7 +121,7 @@ main{
 /*Layout*/
 .contenedor-lg{
     width: 100%;
-    padding: 0 1em;
+    /*padding: 0 1em;*/
 }
 /*COLORES*/
 /*COLORES*/
@@ -179,12 +196,6 @@ main{
 }
 .clr-g3{
     color: var(--gris3);
-}
-.clr-b{
-    color: var(--blanco);
-}
-.clr-n{
-    color: var(--negro);
 }
 /*SVG Color*/
 .fill-1{
@@ -397,7 +408,7 @@ button,.txtbtn{
     display: block;
  }
 /*Grid*/
-.grid,.grid2,.grid3,.grid3c,.grid3icon,.grid4icon,.grid2c,.grid2colum,.grid-flxc,.grid-3-1,.grid-4-2,.grid-5-2{
+.grid,.grid2,.grid3,.grid3c,.grid3icon,.grid4icon,.grid2c,.grid2colum,.grid-flxc,.grid-3-1,.grid-4-2,.grid-5-2,.grid2c {
     display: grid;
 }
 .grid {
@@ -416,6 +427,10 @@ button,.txtbtn{
 }
 .grid3 {
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+}
+/* 1 columna */
+.grid2c {
+  grid-template-columns: 1fr;
 }
 /* 3 columnas */
 .grid3c {
@@ -444,7 +459,7 @@ button,.txtbtn{
     gap: 5px;
   }
   .gap-5{
-    gap: var(--sz0-5),0.5em;
+    gap: var(--sz0-5);
   }
   .gap1{
     gap: var(--sz1);
@@ -649,7 +664,7 @@ button,.txtbtn{
 .hidden,.none-resp,.d-none-resp{
     display: none;
   }
-.block{
+.block, .block-resp{
     display: block;
 }
 /* overflow */
@@ -694,7 +709,10 @@ button,.txtbtn{
   .bordernorm{
     border: 3px solid;
   }
-
+/*Border Bottom*/
+  .brdrbtd-1{
+    border-bottom: 1px dashed;
+  }
 /* BOX-SHADOW */
 .bx{
     box-shadow: 0 9px 18px rgba(0, 0, 0, 0.089), 0 15px 12px rgba(0, 0, 0, 0.048);
@@ -737,7 +755,15 @@ Max-witdh +usadas
 576px
 320px
 */
-
+/*Icono*/
+.ico-w{
+  width: 50px;
+  height: 50px;
+}
+.ico-check{
+  width: 15px;
+  height: 15px;
+}
 
 /*MEDIA QUERIES*/
 @media screen and (min-height: 800px) {
@@ -780,6 +806,9 @@ Max-witdh +usadas
     .mw-420{
       max-width: 370px;
     }
+    .block-resp{
+      display: none;
+  }
     .d-none-resp{
         display: block;
     }
@@ -796,6 +825,10 @@ Max-witdh +usadas
       display: none;
     }
     /*GRID*/
+    /*2 columnas*/
+    .grid2c {
+      grid-template-columns: 1fr 1fr;
+    }
     /*3columnas*/
     .grid-5-2 {
       grid-template-columns: repeat(auto-fit, minmax(13em, 1fr));
